@@ -22,9 +22,9 @@ $articles = $article->fetch_all();
 		<div class="userid">
 			<h2>
 				<?php if(isset($_SESSION['logged_in'])) { 
-					echo $_SESSION['username'];
+					echo $_SESSION['username'].' -';
 				} ?>
-				<a href="index.php" id="logo">- Blog</a>
+				<a href="index.php" id="logo"> Blog</a>
 			</h2>
 		</div>
 
@@ -39,6 +39,7 @@ $articles = $article->fetch_all();
 			<ul>
 				<li><a href="../mycms/admin/logout.php" >Logout</a></li>
 				<li><a href="../mycms/admin/add.php" >Add Article</a></li>
+				<li><a href="../mycms/admin/index.php" >Home</a></li>
 			</ul>
 
 
@@ -48,7 +49,7 @@ $articles = $article->fetch_all();
 	<div class="row">
 		<ul>
 			<?php foreach ($articles as $article ) { ?>
-			
+
 			<li>
 				<h2><a href="articledisplay.php?id=<?php echo $article['article_id']?>">
 					<?php echo $article['article_title'];?>

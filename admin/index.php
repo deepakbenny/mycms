@@ -20,10 +20,14 @@ if(isset($_SESSION['logged_in'])) {
 		
 			<div class="header">
 				<h2>Welcome <?php echo $_SESSION['username']; ?></h2>
+				<p>Goto
+				<a href="../index.php" >Home</a>
+				This page is under Construction
+				</p>
 			</div>
 			<div class="container">
 				<h4>Under Construction</h4>
-				<a href="../index.php" >Home</a>
+				
 				<h3>To Do</h3>
 				
 				<ul>
@@ -96,7 +100,7 @@ if(isset($_SESSION['logged_in'])) {
 		<form action="index.php" method="POST" >
 			<input type="text" name="username" id="textbox" placeholder="username" />
 			<input type="password" name="password" id="textbox" placeholder="password" />
-			<input type="submit" id="submitbutton"value="login" />
+			<input type="submit" id="submitbutton"value="Login" />
 			<input type="button" id="register" onclick="location.href='register.php';"value="Register" />
 			<br/>
 		</form>
