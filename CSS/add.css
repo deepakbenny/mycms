@@ -1,0 +1,66 @@
+body {
+	font-family: sans-serif;
+}
+
+.wrap {
+	width: 500px;
+	margin: 3% auto;
+	padding: 5px;
+	background-color: #DBDBDB;
+}
+
+.header {
+	text-align: center;
+	padding: 1px;
+}
+
+.container {
+}
+
+#info {
+	margin: 20px 20px 30px 50px;
+}
+
+#titlebox {
+	padding: 2px;
+	width: 200px;
+	margin: 20px 0px 30px 0px;
+	font-size: 15px;
+}
+
+#blogbox {
+
+	padding: 2px;
+	margin: 20px 0px 30px 50px;
+	font-size: 18px;
+	font-family: sans-serif;
+
+}
+
+#submitbutton {
+	margin: 10px 0px 30px 50px;
+	width: 100px;
+	height: 30px;
+	font-size: 15px;
+	border: 1px solid #FFE0B2;
+	border-radius: 4px;
+	background-color: #B2B2B2;
+}
+
+#submitbutton:hover {
+	background-color: white;
+	color: #E68A00;
+	border: 1px solid #FFAD33;
+
+}
+
+.errmessage {
+	background-color: #FFB2B2;
+	font-family: sans-serif;
+	font-size: 15px;
+	text-align: center;
+	margin: 0px 0px 20px 100px;
+	width: 280px;
+	height: 20px;
+	padding: 10px;
+}

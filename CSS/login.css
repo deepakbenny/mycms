@@ -1,0 +1,43 @@
+h3,h4 {
+	font-family: sans-serif;
+}
+
+.wrap {
+	width: 350px;
+	margin: 10% auto;
+	background-color: #E8E8E8;
+	padding: 10px;
+}
+
+#textbox {
+	margin: 5px;
+	height: 35px;
+	font-size: 25px;
+
+}
+
+#submitbutton, #register {
+	margin: 5px;
+	font-size: 18px;
+	width: 100px;
+	border: 1px solid #FFC266;
+	background-color: #E6E6E6;
+}
+
+#submitbutton:hover {
+	background-color: #FFB84D;
+}
+
+#register:hover {
+	background-color: #FFB84D;
+}
+
+.errmessage {
+	background-color: #FF6666;
+	font-family: sans-serif;
+	font-size: 15px;
+	text-align: center;
+	margin: 0px 0px 5px 5px;
+	width: 280px;
+	height: 20px;
+}

@@ -1,0 +1,70 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.wrap {
+	width: 300px;
+	margin: 10% auto;
+	padding: 10px 30px 10px 30px ;
+	border: 1px solid;
+}
+
+.header {
+	margin: 10% auto;
+	padding-bottom: 1px;
+}
+
+.registerform {
+	margin: 10% auto;
+	padding: 5px 10px 5px 10px;
+	position: relative;
+}
+
+#textbox {
+	margin: 5px;
+	height: 35px;
+	font-size: 25px;
+	padding: 2px;
+}
+
+
+#submitbutton, #loginbutton {
+	margin: 5px;
+	font-size: 18px;
+	width: 100px;
+	border: 1px solid #FFC266;
+	background-color: #E6E6E6;
+}
+
+#submitbutton:hover {
+	background-color: #FFB84D;
+}
+
+#loginbutton {
+	float: right;
+}
+
+#loginbutton:hover {
+	background-color: #ADEBAD;
+}
+
+.errmessage, .registermessage {
+	background-color: #FF6666;
+	font-family: serif;
+	font-size: 18px;
+	text-align: center;
+	margin: 0px 0px 5px 5px;
+	width: 280px;
+	height: 50px;
+	padding: 1px;
+}
+
+.registermessage p{
+	color: white;
+	padding: 0px 2px 5px 2px;
+}
+
+.registermessage {
+	background-color: #ADEBAD;
+}
