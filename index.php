@@ -65,6 +65,6 @@ $articles = $article->fetch_all();
 </div>
 </body>
 <footer>
-	<p>For the Sake of footer</p>	
+	<p>No copyright--footer here</p>	
 </footer>
 </html>

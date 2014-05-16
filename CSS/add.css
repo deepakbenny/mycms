@@ -6,7 +6,8 @@ body {
 	width: 500px;
 	margin: 3% auto;
 	padding: 5px;
-	background-color: #DBDBDB;
+	background-color: #FFF5E6;
+	border-radius: 10px;
 }
 
 .header {
@@ -34,6 +35,8 @@ body {
 	margin: 20px 0px 30px 50px;
 	font-size: 18px;
 	font-family: sans-serif;
+	border-radius: 10px;
+	border: 1px solid 	#FFC266;
 
 }
 
@@ -42,9 +45,9 @@ body {
 	width: 100px;
 	height: 30px;
 	font-size: 15px;
-	border: 1px solid #FFE0B2;
+	border: 1px solid white;
 	border-radius: 4px;
-	background-color: #B2B2B2;
+	background-color: 	#FFC266;
 }
 
 #submitbutton:hover {

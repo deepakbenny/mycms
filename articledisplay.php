@@ -34,7 +34,7 @@ if(isset($_GET['id']))
 				?>
 				By
 				<?php 
-				echo $_SESSION['username']; } ?>
+				echo $data['article_user']; } ?>
 				</h2> 
 				<h3>
 					-

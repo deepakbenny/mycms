@@ -7,14 +7,16 @@ if(isset($_SESSION['logged_in'])) {
 	if(isset($_POST['title'],$_POST['content'])) {
 		$title = $_POST['title'];
 		$content = nl2br($_POST['content']);
-
+		$username = $_SESSION['username'];
+		echo $_SESSION['username'];
 		if(empty($title) or empty($content)) {
 			$error = "All fields are required";
 		} else {
-			$query = $pdo->prepare('INSERT INTO articles (article_title,article_content,article_timestamp) VALUES (?, ?, ?)');
+			$query = $pdo->prepare('INSERT INTO articles (article_title,article_user,article_content,article_timestamp) VALUES (?, ?, ?, ?)');
 			$query->bindValue(1,$title);
-			$query->bindValue(2,$content);
-			$query->bindValue(3,time());
+			$query->bindValue(2,$username);
+			$query->bindValue(3,$content);
+			$query->bindValue(4,time());
 
 			$query->execute();
 

@@ -1,4 +1,7 @@
 .wrap {
 	width: 300px;
 	margin: 10% auto;
+	background-color: #FFE6C0;
+	padding: 50px;
+	border-radius: 10px;
 }

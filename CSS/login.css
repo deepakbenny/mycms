@@ -5,12 +5,14 @@ h3,h4 {
 .wrap {
 	width: 350px;
 	margin: 10% auto;
-	background-color: #E8E8E8;
+	background-color: 	#FFEBCC;
 	padding: 10px;
+	border: 1px solid #FF9900;
+	box-shadow: 3px 1px 5px 1px #D6D6D6;
 }
 
 #textbox {
-	margin: 5px;
+	margin: 10px;
 	height: 35px;
 	font-size: 25px;
 
@@ -20,16 +22,20 @@ h3,h4 {
 	margin: 5px;
 	font-size: 18px;
 	width: 100px;
-	border: 1px solid #FFC266;
-	background-color: #E6E6E6;
+	border: 1px solid white;
+	background-color: #FFD699;
+	padding: 2px;
+	border-radius: 5px;
 }
 
 #submitbutton:hover {
-	background-color: #FFB84D;
+	background-color: white;
+	border: 1px solid orange;
 }
 
 #register:hover {
-	background-color: #FFB84D;
+	background-color: white;
+	border: 1px solid orange;
 }
 
 .errmessage {

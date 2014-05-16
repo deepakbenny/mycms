@@ -35,7 +35,7 @@ if(isset($_SESSION['logged_in'])) {
 					<li>User Validation</li>
 					<li>Duplicate Entries</li>
 					<h4>User Profile</h4>
-					<li>Personiled Blogs</li>
+					<li>Personilised Blogs</li>
 					<li>Edit Blog</li>
 					<li>Deletion Feature</li>
 					<h4>Blog</h4>
@@ -102,6 +102,7 @@ if(isset($_SESSION['logged_in'])) {
 			<input type="password" name="password" id="textbox" placeholder="password" />
 			<input type="submit" id="submitbutton"value="Login" />
 			<input type="button" id="register" onclick="location.href='register.php';"value="Register" />
+			<input type="button" id="register" onclick="location.href='../index.php';"value="Cancel" />
 			<br/>
 		</form>
 	</div>
