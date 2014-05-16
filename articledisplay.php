@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include_once('includes/connection.php');
 include_once('includes/article.php');
 
@@ -18,23 +18,42 @@ if(isset($_GET['id']))
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title><?php echo $data['article_title'] ?></title>
-		<link rel="stylesheet" href="CSS/style.css">
+		<title>
+			<?php echo $data['article_title'] ?>
+		</title>
+		<link rel="stylesheet" 
+			href="CSS/articledisplay.css">
 	</head>
 	<body>
-		<h2><?php echo $data['article_title']; ?></h2> 
-		<h3>
-			-
-			<small>
-				posted <?php echo date('l jS', $data['article_timestamp']); ?>
-			</small>
-		</h3>
+		<div class="wrap">
+			<div class="date">
+				<h2>
+				<?php echo $data['article_title']; ?>
+					
+				<?php if(isset($_SESSION['username'])) {
+				?>
+				By
+				<?php 
+				echo $_SESSION['username']; } ?>
+				</h2> 
+				<h3>
+					-
+					<small>
+						posted <?php echo date('l jS', $data['article_timestamp']); ?>
+					</small>
+				</h3>
+			</div>
+			<div class="container">
+				<p>
+					<?php echo $data['article_content']; 
+					?>
+				</p>
+			</div>
 
-		<p>
-			<?php echo $data['article_content']; ?>
-		</p>
-
-		<a href="index.php">&larr; Back</a>
+			<input type="button" id="backbutton"
+			onclick="location.href='index.php'" 
+			value="Back">
+		</div>
 	</body>
 	</html>
 

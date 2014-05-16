@@ -1,0 +1,41 @@
+body {
+	font-family: sans-serif;
+}
+
+
+.wrap {
+	margin: 10% auto;
+	width: 700px;
+	padding: 5px;
+	background-color: #F0F0F0;
+
+}
+
+.date {
+	margin: 10px;
+	padding: 5px;
+	border-bottom: 1px solid white;
+	box-shadow: 1px 1px 4px 0px #8F8F8F;
+
+}
+
+.container {
+	margin: 40px 10px 10px 10px;
+	padding: 10px;
+	border: 1px solid white;
+}
+
+#backbutton {
+	width: 70px;
+	height: 25px;
+	margin: 10px;
+	background-color: #FAFAFA;
+	border-radius: 3px;
+	border: 1px solid #FF9900;
+}
+
+#backbutton:hover {
+	background-color: #FF9900;
+	color: white;
+	border: 1px solid #FAFAFA;
+}
